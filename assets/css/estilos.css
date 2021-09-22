@@ -1,0 +1,20 @@
+p{
+    color:rgb(178, 125, 60);
+    font-size: 11px;
+}
+
+p span{
+    color:red;
+    font-size: 18px;
+}
+
+/*.alert{
+    background-color: aqua;
+}*/
+/*p.alert{
+    background-color: aqua;
+}*/
+
+p, .alert{
+    background-color: rgb(152, 89, 89);
+}
