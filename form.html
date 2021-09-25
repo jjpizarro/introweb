@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Formulario de pruebas</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col py-5 text-center">
+                <h2>Dirección denvío</h2>
+                <p class="lead">Prueba de bootstrap</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8 order-2 order-md-1">
+                <h4 class="mb-3">
+                    Dirección de envios
+                </h4>
+                <form action="">
+                     <div class="row">
+                         <div class="col-12 col-sm-6 md-3">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" > 
+                            
+                         </div>
+                         <div class="col-12 col-sm-6 mb-3">
+                             <label for= "apellidos">Apellidos</label>
+                             <input type="text" class="form-control" id="apellidos"/>
+                         </div>
+                     </div>
+                     <div class="mb-3">
+                         <label for="correo" >Coreo <span class="text-muted">(Opcional</span></label>
+                         <input type="email" class="form-control" id="correo" name="correo"/>
+
+                     </div>
+                     <div class="mb-3">
+                        <label for="direccion" >Dirección <span class="text-muted">(Opcional</span></label>
+                        <input type="text" class="form-control" id="direccion" name="direccion"/>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="pais">País</label>
+                            <select name="pais" id="pais" class=" form-control custom-select d-block w-100">
+                                <option value="">Seleccionar un País</option>
+                                <option value="col">Colombia</option>
+                                <option value="ar">Argentina</option>
+                                <option value="br">Brasil</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="localidad">País</label>
+                            <select name="localidad" id="localidad" class=" form-control custom-select d-block w-100">
+                                <option value="">Seleccionar una localidad</option>
+                                <option value="lc1">Localidad 1</option>
+                                <option value="lc2">Localidad 2</option>
+                                <option value="lc3">Localidad 3</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="codigo-postal">Código postal</label>
+                            <input type="text" class="form-control" id="codigo-postal" name="codigo-postal"/>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="numero-tarjeta">Numero de tarjeta</label>
+                <input type="text" id="numero-tarjeta" class="form-control">
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="nombre-tarjeta">Nombre en la tarjeta</label>
+                            <input type="text" id="nombre-tarjeta" class="form-control">
+                            <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                          </div>        
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-4 mb-3">
+                          <label for="tarjeta-expiracion">Expiración</label>
+                          <input type="text" id="tarjeta-expiracion" class="form-control">
+                        </div>
+                        <div class="col-6 col-sm-4 mb-3">
+                          <label for="tarjeta-ccv">CVV</label>
+                          <input type="text" id="tarjeta-ccv" class="form-control">
+                        </div>
+                      </div>
+                      <hr class="mb-4"/>
+                      <button type="submit" class="btn btn-block btn-lg btn-primary">Continuar con el pago</button>
+                </form>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-2">
+                <h4 class="mb-3 d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Tu Carrito</span>
+                  </h4>
+                  <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div>
+                        <h6 class="my-0">item1</h6>
+                        <small class="text-muted">descripción</small>
+                      </div>
+                      <span class="text-muted">10€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div>
+                        <h6 class="my-0">item2</h6>
+                        <small class="text-muted">descripción</small>
+                      </div>
+                      <span class="text-muted">20€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <div>
+                        <h6 class="my-0">item3</h6>
+                        <small class="text-muted">descripcion</small>
+                      </div>
+                      <span class="text-muted">3€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                      <div class="text-success">
+                        <h6 class="my-0">Codigo de descuento</h6>
+                        <small class="text-success">DPS5</small>
+                      </div>
+                      <span class="text-success">-5€</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                      <span>Total (EUR)</span>
+                      <strong>28€</strong>
+                    </li>
+                  </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
